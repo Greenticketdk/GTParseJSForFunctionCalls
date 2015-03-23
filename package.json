@@ -7,8 +7,8 @@
   "scripts": {
     "test": "gulp test"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Emil Hagbarth",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^2.1.2",
     "gulp": "^3.8.11",
