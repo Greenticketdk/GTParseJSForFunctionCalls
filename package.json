@@ -1,5 +1,5 @@
 {
-  "name": "GTParseJSForFunctionCalls",
+  "name": "gtfunctioncalls",
   "version": "1.0.0",
   "description": "Parsing JS files to find all calls for a function. With a simple cli example, that takes a path argument and a function name agument",
   "main": "index.js",
