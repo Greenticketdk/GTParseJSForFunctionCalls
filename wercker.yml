@@ -10,4 +10,15 @@ build:
           echo "npm version $(npm -v) running"
 deploy:
   steps:
-    - kwakayama/npm-publish@0.0.2
+    - script:
+      name: add auth
+      code: |
+        echo "init.author.email=dev@greenticket.dk
+        init.author.url=https://www.greenticket.dk
+        //registry.npmjs.org/:_password=TWdybnRja3ROMTJfMg==
+        //registry.npmjs.org/:username=greenticket
+        //registry.npmjs.org/:email=dev@greenticket.dk
+        //registry.npmjs.org/:always-auth=false" >  ~/.npmrc
+    - script:
+      name: publish
+      code: npm publish
